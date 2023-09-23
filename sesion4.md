@@ -34,7 +34,7 @@ resultado = potencia(2, 3)  # Debe devolver 8 (2^3 = 2 * 2 * 2)
 
 
 
-https://colab.research.google.com/drive/19RFwJv5iYuIQfJtqdgWtGD0Lltpu2OT2?usp=sharing
+https://colab.research.google.com/drive/13wLAOgRqcoxISMA5Xrze4K0joRoegywF?usp=sharing
 
 
 

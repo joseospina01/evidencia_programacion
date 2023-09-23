@@ -39,78 +39,103 @@ Nota: Incluir las captura de pantalla en el repositorio local.
 
 
 
-https://colab.research.google.com/drive/1RRKbSqwGum_hHmWe848vzQDrknKL5-ty?usp=sharing#scrollTo=kRzrAIElTr59
+https://colab.research.google.com/drive/1DNIIHQMLNffTR733gLWHm-g2N2O1_j1j#scrollTo=DYsU7lsjuqo2
 
 
 ```python 
+Lista
 
-lista
+lista = [ 1,2,3,4,5,8,7,6,9,10,]
 
+print(lista)
 
-
-numeros = [1, 2, 3, 4, 5, 5, 6, 7, 8, 9, 10]
-print(numeros)
-numeros.sort()
-print(numeros)
-numeros.sort(reverse=True)
-print(numeros)
-numero_menor = min(numeros)
-print("El número más pequeño en la lista es:", numero_menor)
-numero_mayor = max(numeros)
-print("El número más grande en la lista es:", numero_mayor)
-numero_a_contar = 5
-cantidad = numeros.count(numero_a_contar)
-print(f"El número {numero_a_contar} aparece {cantidad} veces en la lista.")
-numero_a_eliminar = 5
-while numero_a_eliminar in numeros:
-    numeros.remove(numero_a_eliminar)
-print("Lista después de eliminar el número", numero_a_eliminar, ":", numeros)
-numero_a_agregar = 11
-numeros.extend([numero_a_agregar])
-numero_a_agregar = 11
-print("Lista después de agregar el número", numero_a_agregar, ":", numeros)
-numeros.sort()
-print("Lista actualizada en orden:", numeros)
+lista.sort()
+print(lista)
+lista.reverse()
+print(lista)
+np= min(lista)
+print(np)
+ng=max(lista)
+print(ng)
+nc=5
+cantidad=lista.count(nc)
+print(cantidad)
+lista.remove(5)
+print(lista)
+lista.insert(4, 11)
+lista.sort()
+print(lista)
 ```
 
 
+```python
+Tupla
+
+mi_tupla = ("Hola", "mundo", "Python")
+print("Tupla original:", mi_tupla)
+
+
+mi_tupla_ordenada = sorted(mi_tupla)
+print("Tupla ordenada:", mi_tupla_ordenada)
+
+
+primera_palabra = mi_tupla[0]
+print("Primera palabra:", primera_palabra)
+
+
+ultima_palabra = mi_tupla[-1]
+print("Última palabra:", ultima_palabra)
+
+
+numero_de_palabras = len(mi_tupla)
+print("Número de palabras:", numero_de_palabras)
+
+
+mi_tupla_sin_mundo = tuple(word for word in mi_tupla if word != "mundo")
+print("Tupla sin 'mundo':", mi_tupla_sin_mundo)
+
+mi_tupla_con_hola = mi_tupla + ("Hola",)
+print("Tupla con 'Hola':", mi_tupla_con_hola)
+
+```
+
+
+
 ```python 
+Conjunto
 
-conjuntos
+numeros_conjunto = set(range(1, 11))
 
-conjunto_numeros = set(range(1, 11))
-print(conjunto_numeros)
-numero_a_agregar = 11
-conjunto_numeros.add(numero_a_agregar)
-print(conjunto_numeros)
-numero_a_eliminar = 5
-conjunto_numeros.remove(numero_a_eliminar)
-print(conjunto_numeros)
-cantidad_elementos = len(conjunto_numeros)
-print("El conjunto tiene", cantidad_elementos, "elementos.")
-numero_a_buscar = 5
-if numero_a_buscar in conjunto_numeros:
-    print(f"El número {numero_a_buscar} está en el conjunto.")
-else:
-    print(f"El número {numero_a_buscar} no está en el conjunto.")
-numero_a_buscar = 11
-if numero_a_buscar in conjunto_numeros:
-    print(f"El número {numero_a_buscar} está en el conjunto.")
-else:
-    print(f"El número {numero_a_buscar} no está en el conjunto.")
-conjunto_palabras = {"Hola", "mundo", "Python"}
-print(conjunto_palabras)
-palabra_a_buscar = "Hola"
-if palabra_a_buscar in conjunto_palabras:
-    print(f"La palabra '{palabra_a_buscar}' está en el conjunto.")
-else:
-    print(f"La palabra '{palabra_a_buscar}' no está en el conjunto.")
 
-palabra_a_buscar = "mundo"
-if palabra_a_buscar in conjunto_palabras:
-    print(f"La palabra '{palabra_a_buscar}' está en el conjunto.")
-else:
-    print(f"La palabra '{palabra_a_buscar}' no está en el conjunto.")
+print("Conjunto de números:", numeros_conjunto)
+
+
+numeros_conjunto.add(11)
+
+
+numeros_conjunto.discard(5)
+
+numero_de_elementos = len(numeros_conjunto)
+print("Número de elementos:", numero_de_elementos)
+
+esta_cinco = 5 in numeros_conjunto
+print("¿El número 5 está en el conjunto?", esta_cinco)
+
+
+esta_once = 11 in numeros_conjunto
+print("¿El número 11 está en el conjunto?", esta_once)
+
+palabras_conjunto = {"Hola", "mundo", "Python"}
+
+
+print("Conjunto de palabras:", palabras_conjunto)
+
+
+esta_hola = "Hola" in palabras_conjunto
+print("¿La palabra 'Hola' está en el conjunto?", esta_hola)
+
+esta_mundo = "mundo" in palabras_conjunto
+print("¿La palabra 'mundo' está en el conjunto?", esta_mundo)
 
 ```
 
@@ -118,7 +143,7 @@ else:
 diccionario
 
 
-dias_semana = {
+dias_semana_dict = {
     "Lunes": 1,
     "Martes": 2,
     "Miércoles": 3,
@@ -127,31 +152,21 @@ dias_semana = {
     "Sábado": 6,
     "Domingo": 7
 }
+print("Diccionario de días de la semana:", dias_semana_dict)
 
-print(dias_semana)
-numero_lunes = dias_semana["Lunes"]
-print(f"El número correspondiente al día 'Lunes' es: {numero_lunes}")
-numero_a_buscar = 2
-for dia, numero in dias_semana.items():
-    if numero == numero_a_buscar:
-        dia_correspondiente = dia
-        break
-else:
-    dia_correspondiente = "No encontrado"
-print(f"El día de la semana correspondiente al número {numero_a_buscar} es: {dia_correspondiente}")
-if "Lunes" in dias_semana:
-    dias_semana.pop("Lunes")
-print(dias_semana)
-dias_semana = {
-    "Lunes": 1,
-    "Martes": 2,
-    "Miércoles": 3,
-    "Jueves": 4,
-    "Viernes": 5,
-    "Sábado": 6,
-    "Domingo": 7
-}
-print(dias_semana)
+
+numero_lunes = dias_semana_dict["Lunes"]
+print("Número del día 'Lunes':", numero_lunes)
+
+
+dia_numero_2 = next((dia for dia, numero in dias_semana_dict.items() if numero == 2), None)
+print("Día correspondiente al número 2:", dia_numero_2)
+
+
+del dias_semana_dict["Lunes"]
+
+
+print("Diccionario después de eliminar 'Lunes':", dias_semana_dict)
 
 ```
 
