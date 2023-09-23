@@ -1,0 +1,11 @@
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+
+title: Documentación
+
+nombres: Edwin Rios 
+submodulo: Nuevas Tecnologias
+periodo: 2023-2
+url_foto: https://firebasestorage.googleapis.com/v0/b/database-49fc1.appspot.com/o/1adf87d6-e055-4063-a877-5b4ae70dcb82.jpg?alt=media&token=1d02090e-4ed2-48a3-8c13-3d9a24da996d
+
