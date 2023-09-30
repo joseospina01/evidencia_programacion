@@ -56,6 +56,6 @@ Asegúrate de que cada infografía sea fácil de entender y visualmente atractiv
 
 solucion
 
-[drive](https://drive.google.com/drive/folders/1Km8ZypECfzq3CqB85qiUqTLvkSZ1mzSs){:target="_blank"}
+[drive](https://drive.google.com/drive/folders/1N94gO1g3lX7FInai8mGE1agInRWgDfYJ?usp=drive_link){:target="_blank"}
 
 
